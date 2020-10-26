@@ -49,6 +49,7 @@ export default class Toast extends Component {
             {
                 toValue: this.props.opacity,
                 duration: this.props.fadeInDuration,
+                useNativeDriver: false
             }
         )
         this.animation.start(() => {
@@ -70,6 +71,7 @@ export default class Toast extends Component {
                 {
                     toValue: 0.0,
                     duration: this.props.fadeOutDuration,
+                    useNativeDriver: false
                 }
             )
             this.animation.start(() => {
